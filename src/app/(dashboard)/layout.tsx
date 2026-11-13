@@ -36,7 +36,8 @@ export default function DashboardLayout({
   // Derive title from pathname
   const getPageTitle = () => {
     if (pathname.includes('/tenants')) return 'Tenants Directory';
-    if (pathname.includes('/roles')) return 'Platform Roles & Permissions';
+    if (pathname.includes('/roles')) return 'Platform Roles';
+    if (pathname.includes('/permissions')) return 'Permissions Catalog';
     return 'Platform Overview';
   };
 

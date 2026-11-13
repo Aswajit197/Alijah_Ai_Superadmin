@@ -7,6 +7,7 @@ import {
   LayoutDashboard,
   Building2,
   ShieldCheck,
+  KeyRound,
   Zap,
   X
 } from 'lucide-react';
@@ -21,6 +22,7 @@ const NAV_ITEMS = [
   { label: 'Overview', href: '/dashboard', icon: LayoutDashboard },
   { label: 'Tenants / Companies', href: '/tenants', icon: Building2 },
   { label: 'Platform Roles', href: '/roles', icon: ShieldCheck },
+  { label: 'Permissions Catalog', href: '/permissions', icon: KeyRound },
 ];
 
 export function Sidebar({ isOpenMobile, onCloseMobile }: SidebarProps) {

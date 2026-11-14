@@ -10,8 +10,8 @@ import { setAdminAuth } from '@/lib/auth';
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('superadmin@elijah.ai');
-  const [password, setPassword] = useState('SuperSecretPassword123!');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -92,11 +92,11 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          {/* Seed credentials quick-fill hint */}
+          {/* Security footnote */}
           <div className="mt-6 pt-5 border-t border-border/70 text-center">
             <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
               <ShieldCheck className="w-3.5 h-3.5 text-accent" />
-              <span>Default seeded credentials filled automatically</span>
+              <span>Protected by Elijah AI Platform Security</span>
             </div>
           </div>
         </div>
